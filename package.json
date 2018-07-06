@@ -1,0 +1,14 @@
+{
+  "name": "bolgmappa-tunnel-electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "RivinduW",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^2.0.4"
+  }
+}
