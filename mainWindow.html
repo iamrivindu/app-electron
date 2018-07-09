@@ -5,6 +5,30 @@
     <title>ShoppingList</title>
 </head>
 <body>
- <h1>ShoppingList</h1>   
+ <h1>ShoppingList</h1>
+ <ul></ul>
+ <script>
+    const  electron = require('electron');
+    const {ipcRenderer} = electron;
+    const ul = document.querySelector('ul');
+    
+    //Add item
+    ipcRenderer.on('item:add',function(e,item){
+        const li = document.createElement('li');
+        const itemText = document.createTextNode(item);
+        li.appendChild(itemText);
+        ul.appendChild(li);
+    });
+    
+    //Clear items
+    ipcRenderer.on('item:add',function(){
+        ul.innerHTML = '';
+
+    });
+
+    //Remove item
+
+    ul.addEventListener();
+ </script>
 </body>
 </html>
